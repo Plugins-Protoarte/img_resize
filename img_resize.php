@@ -8,7 +8,7 @@
  *	Function for resizing images on the fly in WordPress with resized image caching.
  */
 
-if(!function_exists('img_resize')){
+if(!function_exists('img_resize')) {
 	function img_resize($imageURL, $width, $height, $crop = false) {
 		$imageBase = str_replace(basename($imageURL), '', $imageURL);
 		$imageURL = parse_url($imageURL);
