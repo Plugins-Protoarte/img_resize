@@ -16,7 +16,7 @@ img_resize($imageURL, $width, $height, $crop = false);
 
 Height can be left null to change height proportional to width.
 
-Usage example:
+#### Example
 
 ```PHP
 $headerImage = img_resize(get_theme_mod('header_image'), 200, null);
