@@ -10,7 +10,9 @@ include 'include/img_resize.php';
 
 ### Arguments
 
+```PHP
 img_resize($imageURL, $width, $height, $crop = false);
+```
 
 Height can be left null to change height proportional to width.
 
