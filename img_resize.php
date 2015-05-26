@@ -11,8 +11,8 @@
 if(!function_exists('img_resize')) {
 	function img_resize($imageURL, $width, $height, $crop = false) {
 		$imageBase = str_replace(basename($imageURL), '', $imageURL);
-		$imageURL = parse_url($imageURL);
-		$imagePath = $_SERVER['DOCUMENT_ROOT'] . $imageURL['path'];
+		$imageURLParts = parse_url($imageURL);
+		$imagePath = $_SERVER['DOCUMENT_ROOT'] . $imageURLParts['path'];
 
 		if (!file_exists($imagePath))
 			return false;
