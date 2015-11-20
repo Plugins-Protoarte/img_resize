@@ -1,11 +1,7 @@
 <?php
 
 /*
- *	img_resize()
- *	
  *	Copyright (c) 2015 Brett Whiteman
- *	
- *	Function for resizing images on the fly in WordPress with resized image caching.
  */
 
 function img_resize($imageURL, $width, $height, $crop = false) {
